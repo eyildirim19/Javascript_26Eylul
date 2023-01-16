@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        function Test() {
+            var h = document.getElementById("baslik");
+            h.style.color = "red";
+            console.log(h);
+            h.innerText = 'SLM';
+        }
+        function MesajVer() {
+            /* document.getElementById("baslik").innerText = "<i>Ben event tarafından tetiklendim...</i>";*/
+            document.getElementById("baslik").innerHTML = "<i>Ben event tarafından tetiklendim...</i>";
+            document.getElementById("baslik").style.color = "pink";
+        }
+    </script>
+</head>
+<body onload="Test()">
+    Merhaba Sayfa
+
+
+    <a href="harici.html"></a>
+
+    <h1 id="baslik"></h1>
+    <input type="button" value="Tıkla" onclick="MesajVer()" />
+
+</body>
+</html>

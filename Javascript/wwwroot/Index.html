@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        alert("Merhaba Javascript");
+        console.log("Merhaba Javascript");
+
+        /* değişken tanımlama */
+        var isim = "ekrem yıldırım";
+        var maas = 1000.99;
+        var durum = false;
+
+        // array
+        var kisiler = new Array();
+        kisiler[0] = "Berat";
+        kisiler[1] = "İsmail";
+        kisiler[2] = "Umut";
+
+        for (var i = 0; i < 10; i++) {
+            console.log("test " + i);
+        }
+
+        for (var i = 0; i < kisiler.length; i++)
+            console.log(kisiler[i]);
+
+        var sayi1 = 1;
+        var sayi2 = 2;
+
+        if (sayi1 > sayi2)
+            console.log("büyük sayı 1");
+        else
+            console.log("büyük sayı 2");
+
+
+        function Mesaj() {
+            console.log("Mesaj");
+        }
+
+        function Hesap() {
+            return "Merhaba";
+        }
+
+        function Topla() {
+            return 1 + 1;
+        }
+
+        // fonksiyonlar parametre alabilir
+        function Islem(sayi1, sayi2, karakter) {
+
+            debugger; // break point
+            /*var sonuc;*/
+            switch (karakter) {
+                case '+':
+                    return sayi1 + sayi2;
+                   /* break;*/
+                case '-':
+                    return sayi1 - sayi2;
+                case '*':
+                    return sayi1 * sayi2;
+                default:
+                    return sayi1 / sayi2;
+                    /*break;*/
+            }
+        }
+
+
+        var sonuc = Topla();
+        console.log(sonuc);
+
+    </script>
+
+</head>
+<body>
+
+    Merhaba Javascript
+
+    <a href="sayfa.html">Diğer sayfa</a>
+
+</body>
+</html>
