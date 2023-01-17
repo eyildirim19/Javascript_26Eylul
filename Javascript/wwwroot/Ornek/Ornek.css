@@ -1,0 +1,15 @@
+﻿body {
+}
+
+#dvSlider{
+    width:300px;
+    margin-top:50px;
+    height:42px;
+    overflow:hidden;
+    position:relative;
+}
+
+#dvS{
+    position:absolute;
+    width:300px;
+}

@@ -5,6 +5,10 @@
     {
       "library": "jquery@3.6.3",
       "destination": "wwwroot/"
+    },
+    {
+      "library": "bootstrap@5.2.3",
+      "destination": "wwwroot/Ornek"
     }
   ]
 }
